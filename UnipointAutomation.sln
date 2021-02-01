@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnipointAutomation", "UnipointAutomation\UnipointAutomation.csproj", "{751AABA5-2590-4BDE-B2E5-5393EA94C5EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{751AABA5-2590-4BDE-B2E5-5393EA94C5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751AABA5-2590-4BDE-B2E5-5393EA94C5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751AABA5-2590-4BDE-B2E5-5393EA94C5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751AABA5-2590-4BDE-B2E5-5393EA94C5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B64E675-8733-445E-A271-64EFAEF54C90}
+	EndGlobalSection
+EndGlobal
