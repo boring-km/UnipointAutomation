@@ -96,6 +96,7 @@ namespace UnipointAutomation
                 label1.Text = "퇴근 처리중...";
                 doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
+                doc7 = (IHTMLDocument7)webBrowser.Document;
                 timeElement = doc7.getElementsByClassName("time_num").item(1);
                 String endTime = timeElement.getAttribute("innerText");
                 if(endTime != null)
@@ -113,6 +114,7 @@ namespace UnipointAutomation
                 label1.Text = "출근 처리중...";
                 doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
+                doc7 = (IHTMLDocument7)webBrowser.Document;
                 timeElement = doc7.getElementsByClassName("time_num").item(0);
                 String startTime = timeElement.getAttribute("innerText");
                 if(startTime != null)
@@ -125,6 +127,7 @@ namespace UnipointAutomation
                     Thread.Sleep(1000);
                 }
             }
+            webBrowser.Quit();
         }
 
         // 창 닫기
