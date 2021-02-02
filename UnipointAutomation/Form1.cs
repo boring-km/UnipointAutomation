@@ -96,36 +96,12 @@ namespace UnipointAutomation
                 label1.Text = "퇴근 처리중...";
                 doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
-                doc7 = (IHTMLDocument7)webBrowser.Document;
-                timeElement = doc7.getElementsByClassName("time_num").item(1);
-                String endTime = timeElement.getAttribute("innerText");
-                if(endTime != null)
-                {
-                    label1.Text = "퇴근 처리 완료 및 프로그램 종료...";
-                    this.Close();
-                } else
-                {
-                    label1.Text = "퇴근 처리 실패";
-                    Thread.Sleep(1000);
-                }
             }
             else
             {
                 label1.Text = "출근 처리중...";
                 doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
-                doc7 = (IHTMLDocument7)webBrowser.Document;
-                timeElement = doc7.getElementsByClassName("time_num").item(0);
-                String startTime = timeElement.getAttribute("innerText");
-                if(startTime != null)
-                {
-                    label1.Text = "출근 처리 완료 및 프로그램 종료...";
-                    this.Close();
-                } else
-                {
-                    label1.Text = "출근 처리 실패";
-                    Thread.Sleep(1000);
-                }
             }
             webBrowser.Quit();
         }
