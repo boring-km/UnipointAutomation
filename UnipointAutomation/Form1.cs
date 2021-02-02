@@ -16,7 +16,6 @@ namespace UnipointAutomation
             InitializeComponent();
         }
 
-        // TODO: 아이디/비밀번호 불러오기
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -39,7 +38,6 @@ namespace UnipointAutomation
             }
         }
 
-        // TODO: 아이디/비밀번호 저장
         private void button1_Click(object sender, EventArgs e)
         {
             string inputId = textBox1.Text;
@@ -96,7 +94,7 @@ namespace UnipointAutomation
             if (checkTime.Length > 4)
             {
                 label1.Text = "퇴근 처리중...";
-                // doc.getElementById("btnAttOut").click();
+                doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
                 timeElement = doc7.getElementsByClassName("time_num").item(1);
                 String endTime = timeElement.getAttribute("innerText");
@@ -113,7 +111,7 @@ namespace UnipointAutomation
             else
             {
                 label1.Text = "출근 처리중...";
-                // doc.getElementById("btnAttOut").click();
+                doc.getElementById("btnAttOut").click();
                 Thread.Sleep(1000);
                 timeElement = doc7.getElementsByClassName("time_num").item(0);
                 String startTime = timeElement.getAttribute("innerText");
